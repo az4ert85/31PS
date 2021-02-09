@@ -13,12 +13,21 @@ int main()
 	std::cin >> number1 >> number2;
 	IntNumber intNumber1 = number1;
 	IntNumber intNumber2 = number2;
+	IntNumber suma= intNumber1 + intNumber2;
+	IntNumber minus = intNumber1 - intNumber2;
+	IntNumber product = intNumber1 * intNumber2;
+	IntNumber division = intNumber1 / intNumber2;
+	
+	suma.Write();
+	minus.Write();
+	product.Write();
+	division.Write();
 
-	IntNumber greaterNumber = intNumber1.GetGreater(&intNumber2);
+	/*IntNumber greaterNumber = intNumber1.GetGreater(&intNumber2);
 	IntNumber lessNumber = intNumber1.GetLess(&intNumber2);
 
 	greaterNumber.Write();
-	lessNumber.Write();
+	lessNumber.Write();*/
 	return 0;
 }
 

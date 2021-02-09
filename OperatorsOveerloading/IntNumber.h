@@ -6,14 +6,17 @@ class IntNumber
 public:
 	IntNumber();
 	IntNumber(int number);
-	IntNumber(const IntNumber& intNumber);
-
+	
 	IntNumber GetGreater(IntNumber* intNumber) const;
 	IntNumber GetLess(IntNumber* intNumber) const;
 	void Write()
 	{
 		std::cout << "Number " << number << "\n";
 	}
+	IntNumber operator+(const IntNumber& intNumber);
+	IntNumber operator-(const IntNumber& intNumber);
+	IntNumber operator*(const IntNumber& intNumber);
+	IntNumber operator/(const IntNumber& intNumber);
 	~IntNumber();
 };
 
