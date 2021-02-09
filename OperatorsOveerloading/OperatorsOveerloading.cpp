@@ -18,10 +18,10 @@ int main()
 	IntNumber product = intNumber1 * intNumber2;
 	IntNumber division = intNumber1 / intNumber2;
 	
-	suma.Write();
-	minus.Write();
-	product.Write();
-	division.Write();
+	std::cout << suma;
+	std::cout<<minus;
+	/*product.Write();
+	division.Write();*/
 
 	/*IntNumber greaterNumber = intNumber1.GetGreater(&intNumber2);
 	IntNumber lessNumber = intNumber1.GetLess(&intNumber2);
