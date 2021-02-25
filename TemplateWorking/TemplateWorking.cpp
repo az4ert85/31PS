@@ -25,7 +25,10 @@ int main()
 
 	int mas[10] = { 1,2,3,4,5,6,7,8,9,10 };
 	DynamicArray<int> da(mas, 10);
+	DynamicArray<IntNumber> daIntNumbers;
 	for (int i = 0; i < da.GetLength(); i++)
 		std::cout << da.GetElements()[i] << std::endl;
+	for (int i = 0; i < da.GetLength(); i++)
+		std::cout << daIntNumbers.GetElements()[i] << std::endl;
 	return 0;
 }

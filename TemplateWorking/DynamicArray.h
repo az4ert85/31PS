@@ -56,6 +56,8 @@ DynamicArray<T>  DynamicArray<T>::operator=(const DynamicArray & da)
 	elements = new T[da.size];
 	size = da.size;
 	length = da.length;
+	for (int i = 0; i < length; i++)
+		elements[i] = da.elements[i];
 	return *this;
 }
 
